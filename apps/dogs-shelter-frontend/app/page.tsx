@@ -1,4 +1,4 @@
-import "./globals.css";
+import './globals.css';
 
 export default function Home() {
   return <div className="bg-primary">home</div>;

@@ -40,7 +40,7 @@ export default [
       parserOptions: {
         project: path.resolve("./apps/dogs-shelter-backend/tsconfig.json"),
         tsconfigRootDir: path.resolve("./apps/dogs-shelter-backend"),
-        ecmaVersion: 2023,
+        ecmaVersion: "latest",
         sourceType: "module",
       },
     },
@@ -80,7 +80,7 @@ export default [
       parserOptions: {
         project: path.resolve("./apps/dogs-shelter-frontend/tsconfig.json"),
         tsconfigRootDir: path.resolve("./apps/dogs-shelter-frontend"),
-        ecmaVersion: 2023,
+        ecmaVersion: "latest",
         sourceType: "module",
       },
     },
@@ -89,11 +89,11 @@ export default [
       "@next/next": nextPlugin,
       "@typescript-eslint": tseslint.plugin,
       "jsx-a11y": a11y,
-      prettier: prettierPlugin,
       jest: jestPlugin,
       js: jseslint,
       "react-hooks": reactHooks,
       tailwindcss: tailwindcss,
+      prettier: prettierPlugin,
     },
 
     rules: {
