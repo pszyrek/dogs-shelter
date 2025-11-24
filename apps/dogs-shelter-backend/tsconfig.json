@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
     "declaration": true,
-    "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "ES2023",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
+    "incremental": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noEmit": false,
     "noFallthroughCasesInSwitch": false,
-    "skipLibCheck": true
+    "noImplicitAny": false,
+    "outDir": "./dist",
+    "removeComments": true,
+    "resolvePackageJsonExports": true,
+    "sourceMap": true,
+    "strictBindCallApply": false,
+    "strictNullChecks": true
   },
   "extends": "../../tsconfig.base.json"
 }

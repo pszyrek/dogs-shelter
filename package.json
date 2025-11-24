@@ -2,8 +2,9 @@
   "name": "dogs-shelter-monorepo",
   "version": "0.1.0",
   "scripts": {
-    "build:all": "pnpm -r build",
-    "dev:all": "pnpm -r dev",
+    "build": "turbo run build",
+    "check-types": "tsc --noEmit",
+    "dev": "turbo run dev --parallel --summarize",
     "format": "prettier . --write",
     "lint:fix": "eslint . --fix",
     "lint": "eslint ."
@@ -29,6 +30,7 @@
     "tailwindcss": "^4.1.17",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
+    "turbo": "^2.6.1",
     "typescript": "^5",
     "typescript-eslint": "^8.48.0"
   },
