@@ -1,14 +1,12 @@
 {
+  "extends": "@dogs-shelter/typescript-config/nextjs.json",
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react-jsx",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+    "baseUrl": "./",
     "paths": {
-      "@DSF/*": ["./*"]
+      "@DSB/*": ["../dogs-shelter-backend/src/*"],
+      "@DSF/*": ["./*"],
+      "@DSUI/*": ["../../packages/ui/*"]
     }
   },
   "include": [
@@ -19,6 +17,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"],
-  "extends": "../../tsconfig.base.json"
+  "exclude": ["node_modules"]
 }

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "check-types": "tsc --noEmit",
     "start": "next start",
     "lint": "eslint"
   },
@@ -15,5 +16,8 @@
   },
   "dependencies": {
     "next": "16.0.3"
+  },
+  "devDependencies": {
+    "@dogs-shelter/typescript-config": "workspace:*"
   }
 }

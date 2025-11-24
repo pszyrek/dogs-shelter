@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "turbo run build",
-    "check-types": "tsc --noEmit",
+    "check-types": "turbo run check-types",
     "dev": "turbo run dev --parallel --summarize",
     "format": "prettier . --write",
     "lint:fix": "eslint . --fix",
